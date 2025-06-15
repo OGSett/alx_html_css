@@ -1,0 +1,217 @@
+/* Flexbox Layout Styles */
+
+/* Make body a flex container with column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Make main a flex container with row direction and auto sizing */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    background: white;
+    margin: 0 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Article takes 2/3 of the width with scrollable content */
+article {
+    flex: 2;
+    overflow-y: auto;
+    background: #ffffff;
+    padding: 30px;
+}
+
+/* Aside takes 1/3 of the width with scrollable content */
+aside {
+    flex: 1;
+    overflow-y: auto;
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    border-left: 3px solid #667eea;
+}
+
+/* Header Styling */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px 15px 0 0;
+    margin: 20px 20px 0 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+header li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header li a:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 15px 15px;
+    margin: 0 20px 20px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #764ba2;
+}
+
+/* Article Content Styling */
+article h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+article h2 {
+    color: #34495e;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+article h3 {
+    color: #667eea;
+    position: relative;
+}
+
+article h3::before {
+    content: "▶";
+    color: #667eea;
+    margin-right: 10px;
+}
+
+article p {
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+article img {
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    margin: 20px 0;
+}
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+article table th {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+article table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+article table tr:hover td {
+    background-color: #f8f9fa;
+}
+
+article table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Aside Styling */
+aside p {
+    background: white;
+    border: 2px solid #667eea;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    color: #2c3e50;
+    font-style: italic;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+aside p::before {
+    content: "💬";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: white;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+/* Links Styling */
+article a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+article a:hover {
+    border-bottom-color: #667eea;
+    color: #764ba2;
+}
+
+/* Twitter blockquote styling */
+.twitter-tweet {
+    background: #f8f9fa;
+    border-left: 4px solid #1da1f2;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
