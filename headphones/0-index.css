@@ -13,6 +13,58 @@ a {
   color: inherit;
 }
 
+.whatwedo {
+  color: black;
+}
+
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_video,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing {
+  font-size: 95px;
+  /* width: ; */
+  color: var(--red-btn);
+}
+
+.box {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.whatwedo {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.boxWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px 0 100px 0;
+}
+
+.whatwedo p {
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
 .hero {
   position: relative;
   background-image: url(./images/headphones_hero_1.jpg);
@@ -113,6 +165,15 @@ a {
 
 
 @media (max-width: 480px) {
+
+  .whatwedo p {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .boxWrapper {
+    flex-wrap: wrap
+  }
     .desktop-nav {
         display: none;
     }
