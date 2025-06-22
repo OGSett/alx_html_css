@@ -1,6 +1,7 @@
 :root {
     /* colors  */
-    --red-btn: #FF6565
+    --red-btn: #FF6565;
+    --dark-blue: #071629;
 }
 
 body {
@@ -11,6 +12,41 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.footer {
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+  color: white;
+  font-size: 12px;
+  padding: 40px 0;
+}
+
+.icHolder {
+  color: white;
+  font-size: 30px;
+}
+
+.footerI {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  padding: 40px 0;
+  
+}
+
+.footerI img {
+  width: 160px;
 }
 
 
@@ -72,6 +108,36 @@ a {
   font-size: 95px;
   /* width: ; */
   color: var(--red-btn);
+}
+
+.form {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 20px;
+}
+
+
+
+input,
+textarea {
+  padding: 12px;
+  border:  none;
+  border-bottom:  1px solid black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+
+.call:hover {
+  opacity: 0.9;
 }
 
 .box {
@@ -188,7 +254,7 @@ a {
     margin-top: 0;
 }
 
-.hero-content button {
+.call,.hero-content button {
     background-color: var(--red-btn);
     outline: none;
     border: none;
@@ -281,5 +347,17 @@ a {
     display: block;
     position: absolute;
     left: 10%;
+  }
+
+  .footerI {
+    flex-direction: column;
+  }
+
+  .icHolder {
+    padding-top: 20px;
+  }
+
+  .footer p {
+    padding: 0 0 10px 0;
   }
 }
