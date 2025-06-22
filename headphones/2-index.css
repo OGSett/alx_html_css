@@ -13,6 +13,54 @@ a {
   color: inherit;
 }
 
+
+.results {
+  background-image: url(./images/headphones_hero_2.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.limits {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.resultBox {
+  width: 190px;
+  height: 190px;
+  padding: 20px;
+  background-image: url(./images/pentagone.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.resultBox h1 {
+  color: white;
+  font-size: 46px;
+  line-height: 26px;
+}
+.resultBox p {
+  color: white;
+  font-size: 14px;
+  line-height: 26px;
+}
+
 .whatwedo {
   color: black;
 }
